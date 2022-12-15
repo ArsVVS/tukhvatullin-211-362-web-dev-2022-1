@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Геймерская берлога</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <h1>Ничего интересного</h1>
+    <!--<nav class="menu" role="navigation" aria-label="Menu">
+      
+      <ul class="animenu__nav">  
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>-->
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    
+      
+    <main>
+      <nav class="navigation">
+        <h2>Оглавление</h2>
+          Мой личный сетап:
+          <ul class="setup">
+            <li><a href="#laptop">Компьютер</a></li>
+            <li><a href="#keyboard">Клавиатура</a></li>
+            <li><a href="">Мышка</a></li>
+            <li><a href="">Наушники</a></li>
+          </ul></li>
+        <ul class = "oglavlenie">
+          <li><a href="#pricelist">Суммарная стоимость</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+          
+      </nav>
+
+      <section>
+        <p>Всем "один-ноль-один" (привет)!<br>Цель моего повествования - описание компонентов моего рабочего стола. Статья не претендует на объективность и меня 
+          это не волнует. Формируйте своё мнение на основе собственных выводов и ощущений.</p>
+        <a name="laptop"></a>
+        <h2>Компьютер</h2>
+        <p>В качестве "мозга" моего рабочего стола выступает ноутбук ASUS ROG Zephyrus G15. Приобретен он в Ситилинке в январе 22-го года за 121 тыс. рублей</p>
+      </section>
+      <img src="images/laptop.jpg"
+       alt="Ноутбук">
+      <section>
+        <a name="keyboard"></a>
+        <h2>Клавиатура</h2>
+        <p>Всё, что вы сейчас читаете - результат взаимодействия ноутбука и героя этого блока. Имя ему Red Square Keyrox TKL. Клавиатура оснащена свитчами 
+          Gateron Red, которые уже на протяжении нескольких лет демонсрируют поразительные результаты по надежности и комфорту среди всех клавиатур из "массмаркетов".</p>
+      </section>
+      <img src="images/keyboard.jpeg"
+       alt="Клавиатура">
+
+       <section>
+        <a name="pricelist"></a>
+        <h2>Итоговые цены</h2>
+        <p>
+          Стоит учитывать, что я не выбирал все комплектующие в один и тот же период жизни, так что попридержите свои гневные комментарии для другого сайта. Ниже привёл цены на свои комплектующие:
+        </p>
+        <table class="pricelist">
+          <tr>
+           <th>Предмет</th>
+           <th>Цвет</th>
+           <th>Стоимость</th>
+          </tr>
+          <tr><td>Ноутбук</td><td>Темно-серый</td><td>121630 рублей</td></tr>
+          <tr><td>Клавиатура</td><td>Белый</td><td>5990 рублей</td></tr>
+          <tr><td>Мышка</td><td>Белый</td><td>2890 рублей</td></tr>
+          <tr><td>Наушники</td><td>Белый</td><td>6370 рублей</td></tr>
+          <tr><td>Коврик</td><td>Белый</td><td>4000 рублей</td></tr>
+         </table>
+      </section>
+      <br>
+      <form action="https://httpbin.org/post" method="post">
+        <div>
+            <label for="name">ФИО</label><br>
+            <input name="name" id="name">
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input name="email" id="email">
+        </div>
+        <div>
+            <p>Откуда узнали о нас?</p>
+            <input type="radio" id="contactChoice1" name="contact" value="internet">
+            <label for="contactChoice1">Интернет</label><br>
+
+            <input type="radio" id="contactChoice2" name="contact" value="advertisement">
+            <label for="contactChoice2">Объявления</label><br>
+
+            <input type="radio" id="contactChoice3" name="contact" value="tv">
+            <label for="contactChoice3">Телевидение</label>
+        </div>
+        <div>
+            <label for="type">Тип обращения</label><br>
+            <select name="type" id="type">
+                <option value="complaint">Жалоба</option>
+                <option value="suggestment">Предложение</option>
+            </select>
+        </div>
+        <div>
+            <label for="text">Текст сообщения</label><br>
+            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="file">Вложения</label><br>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <label for="agree">Даю согласие на обработку персональных данных</label>
+            <input type="checkbox" name="agree" id="agree">
+        </div>
+        <div>
+            <button>Отправить</button>
+        </div>
+        <div>
+            <a href="auth.html">Авторизация</a>
+        </div>
+    </form>
+    </main>
+    <footer>
+      <a name="contacts"></a>
+      <h1>Контакты</h1>
+      <table class="contacts">
+        <tr><td>E-mail:</td><td><a href="mailto:arslan.tukhvatullin.834@gmail.com">Arslan.tukhvatullin.834@gmail.com</a></td></tr>
+        <tr><td>Instagram:</td><td><a href="http://instagram.com/ars.vvs?utm_source=qr">@ars.vvs</a></td></tr>
+        <tr><td>Telegram:</td><td><a href="https://t.me/Ars_vvs">@ars_vvs</a></td></tr>
+      </table>
+    </footer>
+  </body>
+</html>

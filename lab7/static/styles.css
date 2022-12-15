@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Rope MF';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rope MF'), url('rope.woff') format('woff');
+    }
+    
+body {
+    font-family:'Rope MF';
+    font-weight: normal;
+    margin: 0;
+    background-color: #2F70AF;
+  }
+  
+  .calc {
+    width: 300px;
+    height: 500px;
+    margin: 100px auto;
+    background: #00457E;
+    border-radius: 5px;
+    color: #fdfdfd;
+    display: grid;
+    padding: 18px;
+    box-shadow: 0 0 70px 90px #00457E;
+  }
+  
+  .calc-screen {
+    height: 125px;
+    position: relative;
+    padding: 10px 5px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    overflow: hidden;
+  }
+  
+  .calc-screen p {
+    text-align: right;
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-areas:
+      'ac plus-minus percent division'
+      'seven eigth nine multi'
+      'four five siz minus'
+      'one two three plus'
+      'zero zero dot equal';
+    grid-gap: 3px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 60px;
+    height: 60px;
+    background: #022c53;
+    border-radius: 15%;
+    text-align: center;
+    line-height: 63px;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    box-shadow: 0 0 10px 5px #022c53;
+  }
+  
+  .bg-grey {
+    background-color: #806491;
+    box-shadow: 0 0 10px 6px #8b7a97;
+  }
+  
+  .bg-orange {
+    background-color: #B9848C;
+    box-shadow: 0 0 10px 6px #b7959a;
+  }
+  
+  .btn.plus-minus {
+    grid-area: plus-minus;
+  }
+  
+  .btn.percent {
+    grid-area: percent;
+  }
+  
+  .btn.division {
+    grid-area: division;
+  }
+  
+  .btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
