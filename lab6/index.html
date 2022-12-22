@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Тухватуллин Арслан</title>
+
+    <script src = "js/script.js"></script>
+</head>
+<body>
+    <header id = "header" class="header">
+
+    </header>
+
+    <section id = "func_1" class="func_1">
+        <form>
+            <p><b>Степень</b></p>
+            <input type="text" size="40" id="num_pow1">
+            <input type="text" size="40" id="num_pow2"> <br> 
+            <p id="res_pow"></p> 
+            <button type = "button" class = "button" onclick = pow()> Ответ </button> 
+        </form>
+    </section>
+
+    <section id = "func_2" class="func_2">
+        <form>
+            <p><b>НОД</b></p>
+            <input type="text" size="40" id="num_gcd1">
+            <input type="text" size="40" id="num_gcd2"> <br>
+            <p id="res_gcd"></p>
+            <button type = "button" class = "button" onclick=gcd()> Ответ </button>
+        </form>
+    </section>
+
+    <section id = "about" class="about">
+        <form>
+            <p><b>Минимальная цифра</b></p>
+            <input type="text" size="40" id="num_min"> <br>
+            
+            <p id="res_min"></p>
+            <button type = "button" class = "button" onclick=minDigit()> Ответ </button>
+        </form>
+    </section>
+
+    <section id = "about" class="about">
+        <form>
+            <p><b>Количество записей</b></p>
+            <input type="text" size="40" id="num_plur"> <br>
+            <p id="res_plur"></p>
+            <button type = "button" class = "button" onclick=pluralizeRecords()> Ответ </button>
+        </form>
+    </section>
+
+    <section id = "about" class="about">
+        <form>
+            <p><b>Числа Фибоначчи</b></p>
+            <input type="text" size="40" id="num_fibb"> <br>
+            <p id="res_fibb"></p>
+            <button type = "button" class = "button" onclick=fibb()> Ответ </button>
+        </form>
+    </section>
+
+    <footer id = "footer" class="footer">
+        
+    </footer>
+</body>
+</html>

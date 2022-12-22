@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgb(192, 192, 192);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: black;
+  transition: color 0.15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: rgb(192, 192, 192);
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: '';
+  background-color: rgb(192, 192, 192);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px 0 black;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  margin: 20px auto;
+  background-color: rgb(192, 192, 192);
+  border-color: rgb(192, 192, 192);
+  box-shadow: 0 0 12px 3px black;
+}
+
+.btn:hover {
+  background-color: rgb(192, 192, 192);
+  border-color: rgb(192, 192, 192);
+}
+
+.btn__text {
+  margin: 0 auto !important;
+  color: black;
+  background-color: rgb(192, 192, 192);
+  border-color: rgb(192, 192, 192);
+  box-shadow: 0 0 12px 3px rgb(192, 192, 192);
+}
+
+.contacts {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__number,
+.contacts__email {
+  text-decoration: none;
+  color: red;
+}
+
+.colored {
+  color: red;
+}
