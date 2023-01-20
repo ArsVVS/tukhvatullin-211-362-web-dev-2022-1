@@ -1,0 +1,310 @@
+
+
+:root {
+  --text-white: #1C252C;;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 0.15em;
+  line-height: 1.25em;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  background-color: #E1D5D9;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+
+  .intro {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .header-menu {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .intro {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .description h2 {
+    font-size: 20px;
+  }
+
+  .album {
+    max-width: 800px;
+    padding: 0 20px;
+  }
+
+  .album-container {
+    flex-direction: column;
+  }
+
+  .album-container img {
+    margin-bottom: 20px;
+  }
+
+  .album-container div {
+    max-width: none !important;
+  }
+
+  .page-footer {
+    margin-top: 100px !important;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro-info {
+    align-self: flex-start !important;
+    font-size: 20px;
+  }
+
+  .description {
+    margin-top: 0 !important;
+  }
+
+  .album-title {
+    font-size: 26px !important;
+  }
+}
+
+img {
+  box-shadow: 0 0 10px 5px black;
+}
+
+header {
+  border-bottom: 2px solid rgb(75, 75, 75);
+  margin: auto;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  max-width: 1200px;
+  padding: 0 60px;
+  margin: 0 auto;
+  height: 70px;
+  font-size: 18px;
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: var(--text-white);
+  padding: 0 15px;
+}
+
+.header-contacts {
+  text-decoration: none;
+  color: var(--text-white);
+}
+
+.intro {
+  column-gap: 60px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro img {
+  width: 45%;
+}
+
+.intro-info {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-white);
+  align-self: flex-end;
+  margin-bottom: 30px;
+}
+
+.intro-info pre {
+  font-size: 12px;
+}
+
+.intro h1 {
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.description {
+  max-width: 80%;
+  color: var(--text-white);
+  margin: 120px auto;
+}
+
+.description h2 {
+  margin-top: 40px;
+  letter-spacing: 0.1em;
+}
+
+.colored {
+  color: #7b7175;
+  text-decoration: none;
+}
+
+.not-colored {
+  color: #1C252C;
+  text-decoration: none;
+}
+
+main {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.albums {
+  color: var(--text-white);
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.album {
+  margin: 20px auto;
+}
+
+.album-title {
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+.album-container {
+  display: flex;
+  column-gap: 30px;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+
+.album-container img {
+  display: block;
+  max-width: 480px;
+  max-height: 480px;
+  width: auto;
+  height: auto;
+}
+
+.album-container div {
+  align-self: center;
+  max-width: 450px;
+}
+
+.album-container p {
+  font-size: 20px;
+  margin: 15px auto;
+  letter-spacing: 0.1em;
+}
+
+.album-container div p span {
+  letter-spacing: 0.1em;
+}
+
+.page-footer {
+  border-top: 2px solid rgb(75, 75, 75);
+  width: 100%;
+  height: 400px;
+  margin-top: 200px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin: 125px auto;
+  max-width: 500px;
+  row-gap: 20px;
+  color: var(--text-white);
+  align-items: center;
+  font-size: 20px;
+}
+
+.info a {
+  margin-bottom: 20px;
+}
+
+form {
+  color: var(--text-white);
+  max-width: 700px;
+  margin: 100px auto 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form div a {
+  margin-top: 50px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: rgb(158, 158, 158);
+}
+
+.response {
+  margin: 100px auto;
+  padding: 30px;
+  width: 600px;
+  background-color: rgb(30, 30, 30);
+  border-radius: 10px;
+  color: #1C252C;
+}
+
+.response p,
+.response textarea {
+  margin-bottom: 20px;
+}
+
+.response textarea {
+  width: 310px;
+  max-width: 310px;
+  height: 100px;
+  max-height: 200px;
+}
+
+.btn {
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+}

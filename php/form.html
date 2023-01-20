@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ranked</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <p class="header-title"><span class="colored">RANKED</span></p>
+      <nav class="header-menu">
+        <a href="http://127.0.0.1:5500/index.html#warlord">Warlord</a></li>
+        <a href="http://127.0.0.1:5500/index.html#starz">Starz</a></li>
+        <a href="http://127.0.0.1:5500/index.html#unknownmemory">Unknown Memory</a></li>
+        <a href="http://127.0.0.1:5500/index.html#poisonivy">Poison Ivy</a></li>
+      </nav>
+      <a href="#contacts" class="header-contacts">About</a></li>
+    </div>
+  </header>
+  <form action="php/home.php" method="post">
+    <div>
+      <label for="name">ФИО</label><br>
+      <input name="name" id="name">
+    </div>
+    <div>
+      <label for="email">Ваш еmail</label><br>
+      <input name="email" id="email">
+    </div>
+    <div>
+      <label for="text">Текст сообщения</label><br>
+      <textarea name="text" id="text" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+      <p>Откуда узнали о нас?</p>
+      <input type="radio" id="contactChoice1" name="contact" value="internet">
+      <label for="contactChoice1">Интернет</label><br>
+
+      <input type="radio" id="contactChoice2" name="contact" value="advertisement">
+      <label for="contactChoice2">Объявления</label><br>
+
+      <input type="radio" id="contactChoice3" name="contact" value="tv">
+      <label for="contactChoice3">Телевидение</label>
+    </div>
+    <div>
+      <label for="type">Тип обращения</label><br>
+      <select name="type" id="type">
+        <option value="complaint">Жалоба</option>
+        <option value="suggestment">Предложение</option>
+      </select>
+    </div>
+    <div>
+      <label for="file">Вложения</label><br>
+      <input type="file" name="file" id="file">
+    </div>
+    <div>
+      <label for="agree">Даю согласие на обработку персональных данных</label>
+      <input type="checkbox" name="agree" id="agree">
+    </div>
+    <div>
+      <button>Отправить</button>
+    </div>
+    <div>
+      <a href="/auth.html">Авторизация</a>
+    </div>
+  </form>
+  </main>
+  <footer class="page-footer">
+    <div class="info">
+      <a name="contacts"><span class="colored">Follow us</span></a>
+      <p>Instagram Facebook Twitter</p>
+      <p class="copyright">© Ranked, 2022. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
